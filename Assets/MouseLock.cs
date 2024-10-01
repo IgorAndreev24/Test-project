@@ -18,6 +18,7 @@ public class MouseLock : MonoBehaviour
     private float _rotationX = 0;
     void Start()
     {
+        Cursor.visible = false;
         Rigidbody body = GetComponent<Rigidbody>();
         if (body != null)
             body.freezeRotation = true;
