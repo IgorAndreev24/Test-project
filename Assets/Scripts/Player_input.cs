@@ -11,11 +11,11 @@ public class Player_input : InteractSystem
     Rigidbody rb;
 
     Vector3 movement;
-    float horizontalMove;
-    float verticalMove;
-    public new GameObject camera;
+    private float horizontalMove;
+    private float verticalMove;
+    [SerializeField] private new GameObject camera;
     private Vector3 rotationY;
-    float jumpAmount = 10f;
+    private float jumpAmount = 10f;
     // Start is called before the first frame update
     void Start()
     {
